@@ -3,14 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title> Quote Form</title>
 </head>
 <body>
-<h1>Write your name, age, and a message!</h1>
+<h1>Submit a Quote</h1>
 <br>
 
-<!-- Create your form here!
- -->
+<form action = "/submit_quote" method= "POST">
+	<label for = "quote"> Quote:</label>
+	<input type="text"  id = "quote" name="quote" required><br> 
+	<label for="author">User:</label>
+	<input type="text" id="user" name="user" required><br>
+	<label for="age"> User's Age:</label>
+	<input type="number" id="user" name="age" required><br>
+	<input type="submit" value="Submit">
+</form>
  
 </body>
 </html>
